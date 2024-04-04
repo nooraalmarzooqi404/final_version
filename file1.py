@@ -42,7 +42,7 @@ class Patient:
         return self.__appointments
 
     def remove_appointment(self):
-        if self.__appointments:  #hheck if deque is not empty
+        if self.__appointments:  #check if deque is not empty
             return self.__appointments.popleft()  #remove the first appointment from the queue
         return None  #return None if there are no appointments to remove
 
