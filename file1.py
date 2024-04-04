@@ -16,7 +16,7 @@ class Patient:
         self.__current_medications = current_medications if current_medications else []
         self.__appointments = deque()  # queue of appointments waiting for consultation
 
-    # setter and getter methods required for other methods introduced latter in the code
+    # setter and getter methods required for other methods introduced later in the code
     def get_details(self):
         return self.__patient_id, self.__name, self.__phone
 
@@ -82,6 +82,6 @@ class Prescription:
         self.__date = date
         self.__medication = medication
 
-    # getter method required latter on
+    # getter method required later on
     def get_details(self):
         return self.__prescription_id, self.__patient_id, self.__doctor_id, self.__date, self.__medication
